@@ -1,0 +1,18 @@
+.nav{
+    padding-top: 15px;
+    display: flex;
+    gap: 300px;
+    justify-content: center;
+}
+.nav div{
+    font-size: 25px;
+    color: white;
+}
+.nav ul{
+    display: flex;
+    gap: 35px;
+}
+.nav ul li{
+    list-style: none;
+    color: white;
+}
