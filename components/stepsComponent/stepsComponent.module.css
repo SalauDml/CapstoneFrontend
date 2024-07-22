@@ -1,0 +1,27 @@
+.imgCtn{
+    position: relative;
+    width: 600px;
+    height: 550px;
+}
+.Ctn{
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+}
+.textCtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.textCtn h2{
+    font-size: 48px;
+    font-weight: 400;
+}
+.textCtn div{
+    font-size: 24px;
+    color: #4b7697;
+}
+.textCtn p{
+    width: 70%;
+}

@@ -64,13 +64,13 @@
     width: max-content;
     font-weight: 400;
     font-size: 40px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 70px auto;
 }
 .stepsCtn{
     margin-top: 250px;
     width: 100%;
 }
-.stepsCtn .stepsCtnHeader{
+.stepsCtnHeader{
     width: max-content;
     margin: 0 auto;
 }
@@ -82,4 +82,13 @@
 .stepsCtnHeader p{
     margin-top: 20px;
     color: #676767;
+}
+.steps{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin-top: 200px;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
 }

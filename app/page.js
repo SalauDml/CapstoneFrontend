@@ -7,6 +7,11 @@ import Desccom from "@/components/descriptioncomp/Desccom";
 import locationPng from '../public/location.png'
 import amenitiesPng from '../public/amenities.png'
 import propertyPng from '../public/propertytype.png'
+import StepsComponent from "@/components/stepsComponent/stepsComponent";
+import step1Png from '../public/step1.jpg'
+import step2Jpg from '../public/step2.jpg'
+import step3Jpg from '../public/step3.jpg'
+
 
 export default function Home() {
   return (
@@ -60,7 +65,25 @@ export default function Home() {
             <h2>How it Works</h2>
             <p>Concise overview of the process involved in buying or selling a property</p>
           </div>
-
+          <div className="steps">
+            <StepsComponent
+            no='01'
+            src={step1Png}
+            heading='Inquire and Inspire'
+            text='Take the first step in securing your ideal rental or property by reaching out to us. Your dream property awaits.'
+            />
+            <StepsComponent
+            no='02'
+            src={step2Jpg}
+            heading='Guided Tours Your Way'
+            text='Let us be your personal tour guide, arranging property viewings tailored to your schedule and preferences'
+            />
+            <StepsComponent
+            no='03'
+            src={step3Jpg}
+            heading='Sealing Your Deal,Your Style'
+            text="Once you've found your perfect property, we'll handle the details, making it yours in a breeze."/>
+          </div>
         </section>
 
       </div>
