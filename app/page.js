@@ -7,7 +7,7 @@ import Desccom from "@/components/descriptioncomp/Desccom";
 import locationPng from '../public/location.png'
 import amenitiesPng from '../public/amenities.png'
 import propertyPng from '../public/propertytype.png'
-import StepsComponent from "@/components/stepsComponent/stepsComponent";
+import StepsComponent from "@/components/stepsComponent/StepsComponent";
 import step1Png from '../public/step1.jpg'
 import step2Jpg from '../public/step2.jpg'
 import step3Jpg from '../public/step3.jpg'
