@@ -11,6 +11,8 @@ import StepsComponent from "@/components/stepsComponent/StepsComponent";
 import step1Png from '../public/step1.jpg'
 import step2Jpg from '../public/step2.jpg'
 import step3Jpg from '../public/step3.jpg'
+import Listingcomp from "@/components/listingcomp/Listingcomp";
+import listimg1 from '../public/listingimg1.jpg'
 
 
 export default function Home() {
@@ -84,6 +86,45 @@ export default function Home() {
             heading='Sealing Your Deal,Your Style'
             text="Once you've found your perfect property, we'll handle the details, making it yours in a breeze."/>
           </div>
+        </section>
+        <section className="listing">
+          <h2>Recent Listing</h2>
+          <div className="listingCtn">
+            <Listingcomp
+            src={listimg1}
+            address='123 Elm Street, Seattle, WA 98101'
+            heading='Cozy Cottage in Seattle City'
+            text="This charming cottage features two bedrooms, a spacious living room and a beautifully landscaped backyard"
+            price='$500,000'
+            nroom='2 rooms'
+            nbath='4 baths'
+            sqft='2500 sqft'
+            />
+            <Listingcomp
+            src={listimg1}
+            address='123 Elm Street, Seattle, WA 98101'
+            heading='Cozy Cottage in Seattle City'
+            text="This charming cottage features two bedrooms, a spacious living room and a beautifully landscaped backyard"
+            price='$500,000'
+            nroom='2 rooms'
+            nbath='4 baths'
+            sqft='2500 sqft'
+            />
+            <Listingcomp
+            src={listimg1}
+            address='123 Elm Street, Seattle, WA 98101'
+            heading='Cozy Cottage in Seattle City'
+            text="This charming cottage features two bedrooms, a spacious living room and a beautifully landscaped backyard"
+            price='$500,000'
+            nroom='2 rooms'
+            nbath='4 baths'
+            sqft='2500 sqft'
+            />
+
+
+          </div>
+
+
         </section>
 
       </div>
