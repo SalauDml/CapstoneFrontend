@@ -1,4 +1,4 @@
-.Buttonw{
+.Buttonnav{
     background-color: rgb(255, 255, 255);
     color: black;
     padding: 10px 24px;
@@ -6,11 +6,18 @@
     border: none;
     font-size: 16px;
 }
-.Buttont{
+.Buttonherotransparent{
     background-color: rgba(255, 255, 255, 0);
     color: white;
     padding: 10px 24px;
     border-radius: 100px;
     border: white, 1px,solid;
     font-size: 16px;
+}
+.Buttonlisting{
+    background-color: rgba(255, 255, 255, 0);
+    border: black 1px solid;
+    font-size: 16px;
+    border-radius: 100px;
+    padding: 10px 24px;
 }
