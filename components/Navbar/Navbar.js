@@ -15,7 +15,7 @@ function Navbar() {
           <li>Contact</li>
           <li>Add Listing</li>
         </ul>
-        <Buttons bc = 'white' text = 'Browse Listing'/>
+        <Buttons type='nav' text = 'Browse Listing'/>
     </nav>
    </>
   )
