@@ -33,8 +33,8 @@ export default function Home() {
               </p>
               <div>
                 {" "}
-                <Buttons text="Browse Listing" bc="white" />{" "}
-                <Buttons bc="transparent" text="List your Place" />
+                <Buttons text="Browse Listing" type='nav' />{" "}
+                <Buttons type='herotransparent' text="List your Place" />
               </div>
             </div>
           </div>
@@ -123,6 +123,7 @@ export default function Home() {
 
 
           </div>
+          <a href=""><Buttons text="View all" type='listingbutton' /></a>
 
 
         </section>

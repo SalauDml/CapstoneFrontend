@@ -110,3 +110,10 @@
     padding-right: 10%;
     /* border: 2px solid black; */
 }
+.listing a {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
