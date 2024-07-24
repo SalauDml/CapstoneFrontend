@@ -4,16 +4,17 @@ import Buttons from "@/components/Buttons/Buttons";
 import "./globals.css";
 import buildingImg from "../public/building.png";
 import Desccom from "@/components/descriptioncomp/Desccom";
-import locationPng from '../public/location.png'
-import amenitiesPng from '../public/amenities.png'
-import propertyPng from '../public/propertytype.png'
+import locationPng from "../public/location.png";
+import amenitiesPng from "../public/amenities.png";
+import propertyPng from "../public/propertytype.png";
 import StepsComponent from "@/components/stepsComponent/StepsComponent";
-import step1Png from '../public/step1.jpg'
-import step2Jpg from '../public/step2.jpg'
-import step3Jpg from '../public/step3.jpg'
+import step1Png from "../public/step1.jpg";
+import step2Jpg from "../public/step2.jpg";
+import step3Jpg from "../public/step3.jpg";
 import Listingcomp from "@/components/listingcomp/Listingcomp";
-import listimg1 from '../public/listingimg1.jpg'
-
+import listimg1 from "../public/listingimg1.jpg";
+import Testimonials from "@/components/testimonials/Testimonials";
+import profilepicture from "../public/profilepicture.jpg";
 
 export default function Home() {
   return (
@@ -33,8 +34,8 @@ export default function Home() {
               </p>
               <div>
                 {" "}
-                <Buttons text="Browse Listing" type='nav' />{" "}
-                <Buttons type='herotransparent' text="List your Place" />
+                <Buttons text="Browse Listing" type="nav" />{" "}
+                <Buttons type="herotransparent" text="List your Place" />
               </div>
             </div>
           </div>
@@ -51,83 +52,126 @@ export default function Home() {
               ptext="Our properties are strategically located in vibrant neighborhoods, ensuring easy access to local attractions, dining, and for a convenient and exciting lifestyle."
             />
             <Desccom
-            src = {propertyPng}
-            htext='Property Type'
-            ptext='Discover our diverse range of properties, from modern urban apartments to cozy countryside cottages, each designed to cater to your unique preferences and needs.'
+              src={propertyPng}
+              htext="Property Type"
+              ptext="Discover our diverse range of properties, from modern urban apartments to cozy countryside cottages, each designed to cater to your unique preferences and needs."
             />
             <Desccom
-            src={amenitiesPng}
-            htext='Amenities'
-            ptext='Elevate your living experience with our top-notch amenities, including fitness centers, communal spaces,  designed to make your stay comfortable and enjoyable.'
+              src={amenitiesPng}
+              htext="Amenities"
+              ptext="Elevate your living experience with our top-notch amenities, including fitness centers, communal spaces,  designed to make your stay comfortable and enjoyable."
             />
           </div>
         </section>
         <section className="stepsCtn">
           <div className="stepsCtnHeader">
             <h2>How it Works</h2>
-            <p>Concise overview of the process involved in buying or selling a property</p>
+            <p>
+              Concise overview of the process involved in buying or selling a
+              property
+            </p>
           </div>
           <div className="steps">
             <StepsComponent
-            no='01'
-            src={step1Png}
-            heading='Inquire and Inspire'
-            text='Take the first step in securing your ideal rental or property by reaching out to us. Your dream property awaits.'
+              no="01"
+              src={step1Png}
+              heading="Inquire and Inspire"
+              text="Take the first step in securing your ideal rental or property by reaching out to us. Your dream property awaits."
             />
             <StepsComponent
-            no='02'
-            src={step2Jpg}
-            heading='Guided Tours Your Way'
-            text='Let us be your personal tour guide, arranging property viewings tailored to your schedule and preferences'
+              no="02"
+              src={step2Jpg}
+              heading="Guided Tours Your Way"
+              text="Let us be your personal tour guide, arranging property viewings tailored to your schedule and preferences"
             />
             <StepsComponent
-            no='03'
-            src={step3Jpg}
-            heading='Sealing Your Deal,Your Style'
-            text="Once you've found your perfect property, we'll handle the details, making it yours in a breeze."/>
+              no="03"
+              src={step3Jpg}
+              heading="Sealing Your Deal,Your Style"
+              text="Once you've found your perfect property, we'll handle the details, making it yours in a breeze."
+            />
           </div>
         </section>
         <section className="listing">
           <h2>Recent Listing</h2>
           <div className="listingCtn">
             <Listingcomp
-            src={listimg1}
-            address='123 Elm Street, Seattle, WA 98101'
-            heading='Cozy Cottage in Seattle City'
-            text="This charming cottage features two bedrooms, a spacious living room and a beautifully landscaped backyard"
-            price='$500,000'
-            nroom='2 rooms'
-            nbath='4 baths'
-            sqft='2500 sqft'
+              src={listimg1}
+              address="123 Elm Street, Seattle, WA 98101"
+              heading="Cozy Cottage in Seattle City"
+              text="This charming cottage features two bedrooms, a spacious living room and a beautifully landscaped backyard"
+              price="$500,000"
+              nroom="2 rooms"
+              nbath="4 baths"
+              sqft="2500 sqft"
             />
             <Listingcomp
-            src={listimg1}
-            address='123 Elm Street, Seattle, WA 98101'
-            heading='Cozy Cottage in Seattle City'
-            text="This charming cottage features two bedrooms, a spacious living room and a beautifully landscaped backyard"
-            price='$500,000'
-            nroom='2 rooms'
-            nbath='4 baths'
-            sqft='2500 sqft'
+              src={listimg1}
+              address="123 Elm Street, Seattle, WA 98101"
+              heading="Cozy Cottage in Seattle City"
+              text="This charming cottage features two bedrooms, a spacious living room and a beautifully landscaped backyard"
+              price="$500,000"
+              nroom="2 rooms"
+              nbath="4 baths"
+              sqft="2500 sqft"
             />
             <Listingcomp
-            src={listimg1}
-            address='123 Elm Street, Seattle, WA 98101'
-            heading='Cozy Cottage in Seattle City'
-            text="This charming cottage features two bedrooms, a spacious living room and a beautifully landscaped backyard"
-            price='$500,000'
-            nroom='2 rooms'
-            nbath='4 baths'
-            sqft='2500 sqft'
+              src={listimg1}
+              address="123 Elm Street, Seattle, WA 98101"
+              heading="Cozy Cottage in Seattle City"
+              text="This charming cottage features two bedrooms, a spacious living room and a beautifully landscaped backyard"
+              price="$500,000"
+              nroom="2 rooms"
+              nbath="4 baths"
+              sqft="2500 sqft"
             />
-
+          </div>
+          <a href="">
+            <Buttons text="View all" type="listingbutton" />
+          </a>
+        </section>
+        <section className="testimonials">
+          <div className="testimonialsTextCtn">
+          <h2 id="heading">Customer Testimonials</h2>
+          <p>Let's take a look at what a customer has to say about us</p>
+          </div>
+          
+          <div className="testimonialsCtn">
+          <Testimonials
+            pfp={profilepicture}
+            address='New York'
+            text="We couldnt have asked for a better experience with Real Estatoe Their expertise and dedication made our home-buying process smooth and stress-free. They found us our dream home and negotiated a great deal. Highly recommended!"
+          />
+          <Testimonials
+            pfp={profilepicture}
+            address='New York'
+            text="I recently sold my property with Real Estatoe, and I was impressed by their professionalism and market knowledge. They went above and beyond to showcase my home and secure a quick sale at a great price. Thank you!"
+          />
+          <Testimonials
+            pfp={profilepicture}
+            address='New York'
+            text="We couldnt have asked for a better experience with Real Estatoe Their expertise and dedication made our home-buying process smooth and stress-free. They found us our dream home and negotiated a great deal. Highly recommended!"
+          />
+          <Testimonials
+            pfp={profilepicture}
+            address='New York'
+            text="I can't thank Real Estatoe enough for helping me find the perfect rental property. They listened to my preferences and found me a beautiful apartment within my budget. Their attention to detail and commitment to customer satisfaction truly stand out"
+          />
+          <Testimonials
+            pfp={profilepicture}
+            address='New York'
+            text="Selling my property through Real Estatoe was a breeze. Their team's marketing strategies and negotiation skills were impressive. I was kept informed at every step, and my property sold quickly. I highly recommend their services"
+          />
+          <Testimonials
+            pfp={profilepicture}
+            address='New York'
+            text="We couldnt have asked for a better experience with Real Estatoe Their expertise and dedication made our home-buying process smooth and stress-free. They found us our dream home and negotiated a great deal. Highly recommended!"
+          />
 
           </div>
-          <a href=""><Buttons text="View all" type='listingbutton' /></a>
-
-
+         
+          
         </section>
-
       </div>
     </>
   );
