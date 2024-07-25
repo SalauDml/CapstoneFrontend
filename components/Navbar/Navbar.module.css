@@ -1,8 +1,9 @@
 .nav{
-    padding-top: 15px;
+    padding: 15px 80px 0px 100px;
     display: flex;
-    gap: 300px;
-    justify-content: center;
+    /* gap: 300px; */
+    justify-content: space-between;
+    background-color: #1E1E1E;
     
 }
 .nav div{

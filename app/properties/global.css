@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    /* 141414 */
+}
+.hero h2{
+    color: white;
+    font-size: 38px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.hero p{
+    color: #999999;
+    width: 90%;
+    font-size: 16px;
+}
+
+
+.hero{
+    width: 100vw;
+    padding: 100px 200px 130px 100px;
+    background:linear-gradient(120deg, #262626,#1e1e1e)
+}
+.search{
+    background-color: #141414;
+    width: 100%;
+}
+.searchCtn{
+    position: relative;
+    /* border: 2px solid blue; */
+    position: relative;
+    width: 100%;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    /* padding-right: 100px; */
+}
+#searchbar{
+    position: relative;
+    bottom: 35px;
+    width: 100%;
+    color: white;
+    font-size: large;
+    height: 71px;
+    background-color: #1E1E1E;
+    text-decoration: none;
+    padding: 25px 80px 25px 20px; 
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.searchCtn button {
+    position: absolute;
+    bottom: 45px;
+    left: 690px;
+    width: 100px;
+    height: 50px;
+    background-color: #703BF7;
+    padding: 5px 0px 5px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    border: #1E1E1E 1px solid;
+}
+.filterCtn{
+    padding: 5px 80px;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+    /* max-width: 1000px; */
+    border-radius: 10px;
+    height: 50px;
+    /* box-sizing: content-box; */
+    /* border: 2px solid white; */
+}
+#location,#ptype, #prange, #psize{
+    width: 25%;
+    height: 100%;
+    background-color: #1e1e1e;
+    color:#999999;
+    
+
+}
+.properties{
+    background-color: #141414;
+    width: 100%;
+    /* margin-top: 100px; */
+    /* border: 2px solid white; */
+    padding: 100px 80px 130px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.propertiesTextCtn h2{
+    font-size: 38px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.propertiesTextCtn p{
+    font-size: 16px;
+    color: #262626;
+}
+.listingCtn{
+    width:100% ;
+    display: flex;
+    justify-content: space-between;
+    
+    /* border: 1px solid white; */
+    /* padding: 0px 80px; */
+}
