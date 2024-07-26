@@ -26,10 +26,8 @@ function page() {
             <button type="search-button">Search</button>
           </div>
           <div className="filterCtn">
-            <select name="Location" id="location">
-              <option value="" disabled selected>
-                Location
-              </option>
+            <select  name="Location" id="location">
+      
               <option value="Lagos">Lagos</option>
               <option value="Lagos">Lagos</option>
               <option value="Lagos">Lagos</option>
