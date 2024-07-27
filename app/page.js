@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Navbar from "@/components/Navbar/Navbar";
 import Buttons from "@/components/Buttons/Buttons";
 import "./globals.css";

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './desccom.module.css'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 function Desccom({src,htext,ptext}) {
   return (
