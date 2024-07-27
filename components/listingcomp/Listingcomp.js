@@ -15,7 +15,7 @@ function Listingcomp({
   return (
     <div className={styles.compCtn}>
       <div className={styles.imgCtn}>
-        <Image src={src} fill={true} objectFit="cover" />
+        <Image className={styles.img} src={src} fill={true} objectFit="cover" />
         <div>Sale</div>
       </div>
       <p id={styles.address}>{address}</p>

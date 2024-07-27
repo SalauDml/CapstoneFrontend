@@ -26,35 +26,26 @@ function page() {
             <button type="search-button">Search</button>
           </div>
           <div className="filterCtn">
-            <select  name="Location" id="location">
-      
+            <select defaultValue='Location'  name="Location" id="location">
               <option value="Lagos">Lagos</option>
               <option value="Lagos">Lagos</option>
               <option value="Lagos">Lagos</option>
             </select>
-            <select name="Property Type" id="ptype">
-              <option value="" disabled selected>
-                Property Type
-              </option>
+            <select defaultValue='Property Type' name="Property Type" id="ptype">        
+              <option value="Bungalow">Bungalow</option>
+              <option value="Bungalow">Story building</option>
+              <option value="Bungalow">Apartment</option>
+            </select>
+            <select defaultValue='Pricing range' name="Pricing Range" id="prange">
               <option value="Bungalow">Bungalow</option>
               <option value="Bungalow">Bungalow</option>
               <option value="Bungalow">Bungalow</option>
             </select>
-            <select name="Pricing Range" id="prange">
-              <option value="" disabled selected>
-                Pricing Range
-              </option>
-              <option value="Bungalow">Bungalow</option>
-              <option value="Bungalow">Bungalow</option>
-              <option value="Bungalow">Bungalow</option>
-            </select>
-            <select name="Property Size" id="psize">
-              <option value="" disabled selected>
-                Property Size
-              </option>
-              <option value="Bungalow">Bungalow</option>
-              <option value="Bungalow">Bungalow</option>
-              <option value="Bungalow">Bungalow</option>
+            <select defaultValue='Property Size' name="Property Size" id="psize">
+              
+              <option value="Bungalow">Small</option>
+              <option value="Bungalow">Medium</option>
+              <option value="Bungalow">Large</option>
             </select>
           </div>
         </div>
