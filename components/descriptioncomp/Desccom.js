@@ -9,7 +9,7 @@ function Desccom({src,htext,ptext}) {
         <div className={styles.imgCtn}>
             <Image
                 src={src}
-                fill= {true}
+                fill= "true"
                 objectFit='cover'
             />
         </div>

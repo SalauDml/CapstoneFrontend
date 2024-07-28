@@ -15,7 +15,7 @@ function StepsComponent({no,heading,text,src}) {
         <div className={styles.imgCtn}>
         <Image
             src={src}
-            fill= {true}
+            fill= "true"
             objectFit='cover'/> 
          </div>
 

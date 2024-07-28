@@ -40,7 +40,7 @@ export default function Home() {
             </div>
           </div>
           <div className="imgCtn">
-            <Image src={buildingImg} fill={true} objectFit="contain" />
+            <Image src={buildingImg} fill="true" objectFit="contain" />
           </div>
         </div>
         <section className="description">

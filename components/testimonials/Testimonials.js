@@ -13,7 +13,7 @@ function Testimonials({text,pfp,address}) {
             <div className={styles.imgCtn}>
                 <Image
                 src={pfp}
-                fill={true}/>
+                fill="true"/>
             </div>
             <div className={styles.authorTextCtn}>
                 <div >John</div>
