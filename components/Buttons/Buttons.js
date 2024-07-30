@@ -13,7 +13,10 @@ function Buttons({type,text}) {
     case 'listingbutton':
       cn = 'Buttonlisting'
       break;
-  
+    case 'footer':
+      cn = 'Buttonfooter'
+    case 'hero':
+      cn = 'Buttonhero'
   
   }
 

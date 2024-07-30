@@ -5,46 +5,52 @@
     
 }
 
-.bgWrapper{
-    width: 100dvw;
-    height: 150vh;
-    overflow-y: hidden;
-    background-image: linear-gradient(to bottom, #4b7697,#e8e8e8);
+
+.hero{
+    background-color: #1a1a1a;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 80px;
+    height: 60vh;
+    display: flex;
+
 }
 
-.heroCtn{
-    width: 100vw;
-}
-.hero{
+   
+
+.heroTextCtn{
+    /* padding-top: 50px; */
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    margin-top: 120px;
+    justify-content: center;
+    gap: 20px;
+
 
 }
-.hero div{
-    width: 50%;
-    text-align: center;
-    font-size: 55px;
+.heroTextCtn h2{
+    font-size: 40px;
     color: white;
+    width: 80%;
 }
-.hero p {
-    width: 50%;
-    text-align: center;
-    color: white;
-    margin-top: 30px;
-    line-height: 30px;
-    font-weight: 600;
-    
-}
+.heroTextCtn p{
+    margin-top: 20px;
+    color: #999999;
+    font-size: 15px;
+    margin-bottom: 20px;
 
-.imgCtn{
+}
+.heroImgCtn{
+    width: 50%;
+    height: 100%;
+    /* display: inline-block; */
     position: relative;
-    margin-top: 50px;
-    width: 100%;
-    height: 70%;    
 }
+
+
+
+
 
 
 .descCtn{
@@ -55,9 +61,7 @@
 }
 
 .description{
-    
     width: 100%;
-    margin-top: 250px;
 }
 .description > h2{
     width: max-content;
@@ -65,48 +69,31 @@
     font-size: 40px;
     margin: 0 auto 70px auto;
 }
-.stepsCtn{
-    margin-top: 250px;
-    width: 100%;
-}
-.stepsCtnHeader{
-    width: max-content;
-    margin: 0 auto;
-}
-.stepsCtnHeader h2{
-    width: max-content;
-    margin: 0 auto;
-    font-size: 52px;
-}
-.stepsCtnHeader p{
-    margin-top: 20px;
-    color: #676767;
-}
-.steps{
+
+.listing{
     display: flex;
     flex-direction: column;
-    gap: 150px;
-    margin-top: 200px;
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.listing{
-    margin-top: 200px;
+    gap: 20px;
+    padding-top:150px;
+    background-color: #141414;
+    padding-left: 100px;
+    padding-right: 80px;
+    /* margin-top: 200px; */
     width: 100%;
 }
 .listing h2{
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
+    color: white;
     font-size: 40px;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
+}
+.listing p{
+    color: white;
 }
 .listingCtn{
     display: flex;
     gap: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    
     /* border: 2px solid black; */
 }
 .listing a {
@@ -117,10 +104,11 @@
     
 }
 .testimonials{
-    margin-top: 250px;
+    background-color: #141414;
+    
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 100px;
+    padding-right: 80px;
 }
 .testimonialsCtn{
     display: grid;
@@ -131,14 +119,16 @@
     
     
 }
-.testimonialsTextCtn{
+/* .testimonialsTextCtn{
     margin: 0 auto;
     width: max-content;
-}
+} */
 .testimonialsTextCtn h2{
     font-size: 40px;
     margin-bottom: 50px;
+    color: white;
 }
 .testimonialsTextCtn p{
     margin-bottom: 70px;
+    color: white;
 }

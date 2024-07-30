@@ -25,3 +25,20 @@
     background-color: #703BF7;
     color: white;
 }
+.Buttonfooter{
+    background-color: #703BF7;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+
+}
+.Buttonhero{
+    background-color: #703BF7;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    width: 200px;
+
+}

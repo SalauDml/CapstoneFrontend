@@ -6,7 +6,7 @@ function Navbar() {
   return (
    <>
    <nav className={styles.nav}>
-        <div>Real Estateo</div>
+        <h2>Real Estateo</h2>
         <ul>
           <li>Home</li>
           <li>About</li>

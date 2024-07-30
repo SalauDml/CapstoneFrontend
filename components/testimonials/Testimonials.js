@@ -7,6 +7,7 @@ function Testimonials({text,pfp,address}) {
   return (
     <div className={styles.compCtn}>
         <div className={styles.textCtn}>
+          <h2>Exceptional Service!</h2>
         <p>"{text}."</p>
         </div>
         <div className={styles.authorCtn}> 

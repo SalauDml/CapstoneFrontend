@@ -1,7 +1,7 @@
 import React from "react";
 import Listingcomp from "@/components/listingcomp/Listingcomp";
 import listimg1 from "../../public/listingimg1.jpg";
-
+import Footer from "@/components/Footer/Footer";
 function page() {
   return (
     <>
@@ -93,6 +93,7 @@ function page() {
           
         </div>
       </section>
+      <Footer/>
     </>
   );
 }
