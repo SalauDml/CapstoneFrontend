@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141414;
+
+
+}
+.bgWrapper{
+    width: 100%;
+    height: 100%;
+}
+.images{
+    margin-top: 50px;
+    padding: 0px 100px 0px 100px;
+
+}
+.imageTextCtn{
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.nameCtn{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.nameCtn h1{
+    font-weight: 500;
+}
+.nameCtn h3{
+    font-weight: 600;
+    font-size: 10px;
+    background-color: #262626;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+.priceCtn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.priceCtn h4{
+    font-size: 10px;
+    color: #999999;
+    font-weight: 400;
+}
+.priceCtn h3{
+    font-weight: 500;
+}
+.lowerCtn{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 20px;
+}
+.description{
+    width: 50%;
+    padding: 40px 40px;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    height: fit-content;
+}
+.description h2{
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    
+}
+.description p{
+    color: #999999;
+    font-size: 15px;
+    margin-top: 10px;
+    
+}
+.lineDivider{
+    width: 100%;
+    border: 1px solid #999999;
+    margin-top: 25px;
+}
+.keyFeatures{
+    border: 1px solid #262626;
+    border-radius: 10px;
+    width: 50%;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.keyFeatures h2{
+    color: white;
+    font-size: 18px;
+}
+.keyFeatures p{
+    padding: 5px 0px;
+    margin: 0;
+    color: #999999;
+    background:linear-gradient(90deg,#262626 20%,#141414);
+    width: fit-content;
+
+}
+.descriptionLowerCtn{
+    display: flex;
+    justify-content: space-between;
+}
+.iconCtn{
+    display: inline-block;
+}
+.iconCtn h3{
+    display: inline-block;
+    color: #999999;
+    font-weight: 500;
+    font-size: 10px;
+}
+.iconCtn p{
+    color: white;
+    margin-top: 5px;
+}
+.icon{
+    display: inline-block;
+    color: #999999;
+}
+.iconCtnUpperCtn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
