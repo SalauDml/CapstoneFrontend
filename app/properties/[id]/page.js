@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "./propertylisting.css";
 import Imgslideshow from "@/components/imageSlideshow/Imgslideshow";
@@ -5,7 +6,8 @@ import { IoBed } from "react-icons/io5";
 import { FaBath } from "react-icons/fa6";
 import { FaVectorSquare } from "react-icons/fa";
 
-function page() {
+function page({}) {
+  // const {id} = params || {};
   return (
     <>
       <div className="bgWrapper">
@@ -21,7 +23,7 @@ function page() {
               <h3>$700,000</h3>
             </div>
           </div>
-          <Imgslideshow />
+          <Imgslideshow  />
 
           <div className="lowerCtn">
             <div className="description">

@@ -4,15 +4,16 @@ import './global.css'
 
 function Propertieslayout({children}) {
   return (
-    <html>
-        <body>
-            
-            <header>
+        
+           <>
+           <header>
                 <Navbar/>
             </header>
             {children}
-        </body>
-    </html>
+           
+           </> 
+          
+    
   )
 }
 

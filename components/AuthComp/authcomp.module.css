@@ -1,0 +1,98 @@
+.compCtn{
+    width: 450px;
+    height: 300px;
+    background-color: #111111;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 300px;
+    padding: 20px 40px;
+}
+.headingCtn{
+    /* padding: 0 20px; */
+    display: flex;
+    justify-content: space-between;
+}
+.compCtn h2{
+    color: white;
+    display: inline-block;
+    font-size: 30px;
+    background-color: #2f2f2f;
+    padding: 10px;
+    border-radius: 10px;
+}
+.selected:first-of-type,.selected:nth-of-type(2){
+    background-color: white;
+    color: black;
+}
+.compCtn h2:hover{
+    cursor: pointer;
+}
+.loginFormCtn{
+    margin-top: 50px;
+}
+#loginUsernameField{
+    color: white;
+}
+.loginform label{
+    display: block;
+    color: white;
+}
+.loginform input{
+    background-color: #2f2f2f;
+    border: none;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 0;
+    color: white;
+}
+#loginBtn{
+    margin-top: 20px;
+    background-color: #2f2f2f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+#loginBtn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.signupFormCtn{
+    margin-top: 30px;
+}
+.signupform{
+    width: 100%;
+}
+.signupforminputctn{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    display: inline-block;
+}
+.signupforminputctn input{
+    background-color: #2f2f2f;
+    border: none;
+    height: 30px;
+    /* width: 100%; */
+    border-radius: 5px;
+    padding-bottom: 0;
+    color: white;
+
+}
+.signupforminputctn label{
+    color: white;
+    
+}
+
+#signupBtn{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #2f2f2f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
