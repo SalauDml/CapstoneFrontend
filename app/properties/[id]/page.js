@@ -5,9 +5,29 @@ import Imgslideshow from "@/components/imageSlideshow/Imgslideshow";
 import { IoBed } from "react-icons/io5";
 import { FaBath } from "react-icons/fa6";
 import { FaVectorSquare } from "react-icons/fa";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { useEffect } from "react";
+import { useRef } from "react";
 
-function page({}) {
-  // const {id} = params || {};
+
+function Page({params}) {
+  const id = params.id
+  const initial = useRef(true)
+  const [property,setProperty] = useState(null)
+  async function fetchData() {
+    const response =  await fetch(`http://127.0.0.1:8000/properties/${id}`)
+    const data = await response.json();
+    setProperty(data)
+    console.log(data.title)
+  }
+  if (initial.current == true){
+    fetchData()
+    initial.current = false
+  }
+
+
+
   return (
     <>
       <div className="bgWrapper">
@@ -23,7 +43,7 @@ function page({}) {
               <h3>$700,000</h3>
             </div>
           </div>
-          <Imgslideshow  />
+          <Imgslideshow id={id}  />
 
           <div className="lowerCtn">
             <div className="description">
@@ -73,5 +93,6 @@ function page({}) {
     </>
   );
 }
+export default Page;
 
-export default page;
+

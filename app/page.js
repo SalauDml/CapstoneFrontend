@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Navbar from "@/components/Navbar/Navbar";
 import Buttons from "@/components/Buttons/Buttons";
@@ -17,8 +18,12 @@ import Testimonials from "@/components/testimonials/Testimonials";
 import profilepicture from "../public/profilepicture.jpg";
 import Footer from "@/components/Footer/Footer";
 import heroImg from "../public/building2.jpeg";
+import { useEffect } from "react";
+
 
 export default function Home() {
+
+  
   return (
     <>
       <Navbar />

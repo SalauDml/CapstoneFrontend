@@ -3,8 +3,12 @@ import React from "react";
 import styles from "./authcomp.module.css";
 import { useState } from "react";
 import { redirect } from "next/dist/server/api-utils";
+import { useRouter } from "next/navigation";
+
+import Cookies from "js-cookie";
 
 function Authcomp() {
+  const router = useRouter();
   const [signup, setSignup] = useState("");
   const [login, setLogin] = useState("selected");
   const[formdata,setFormdata] = useState({firstname:'',lastname:'',password:'',email:'',username:''})
@@ -25,6 +29,7 @@ function Authcomp() {
       });
       if(response.ok){
         console.log("Form submitted successfully")
+        setFormdata({firstname:'',lastname:'',password:'',email:'',username:''})
 
       }
       else{
@@ -38,8 +43,37 @@ function Authcomp() {
     console.log(formdata);
 
   }
+  async function handleLogin(event){
+    event.preventDefault();
+    console.log("Handle login running")
 
+    const logindata = {username : formdata.username, password: formdata.password
+    }
+    const response = await fetch(`http://127.0.0.1:8000/user/login`,{
+      method: 'POST',
+      headers : {
+        'Content-Type' : 'application/json'
+      },
+      body: JSON.stringify(logindata)
+    })
+    if (response.ok) {
+      console.log("form submitted successfully")
+      const {access} =  await response.json()
+      Cookies.set('authToken',access,{expires:0.00347})
+      console.log("Token successfully stored in cookie")
+      setFormdata({ username: '', password: '' });
+      
+      router.push('/properties')
 
+    }
+    else{
+      console.log(response.error)
+    }
+    
+
+    
+
+  }
   
   function onChange(e){
     const {name,value} = e.target;
@@ -132,22 +166,26 @@ function Authcomp() {
         </h2>
       </div>
       <div className={styles.loginFormCtn}>
-        <form className={styles.loginform} action="" method="post">
+        <form className={styles.loginform} action="" method="post" onSubmit={handleLogin}>
           <label htmlFor="username"> Username</label>
           <input
+          onChange={onChange}
             type="text"
             name="username"
             id="loginUsernameField"
+            value={formdata.username}
             // placeholder="Username"
           />
           <label htmlFor="password"> Password</label>
           <input
+            onChange={onChange}
             type="text"
             name="password"
             id="loginPasswordField"
+            value={formdata.password}
             // placeholder="Username"
           />
-          <button id={styles.loginBtn} type="submit">
+          <button id={styles.loginBtn} type="submit" >
             Log In
           </button>
         </form>

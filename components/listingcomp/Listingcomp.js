@@ -4,6 +4,7 @@ import Image from "next/legacy/image";
 import styles from "./listing.module.css";
 
 function Listingcomp({
+  bruh,
   src,
   address,
   heading,
@@ -16,7 +17,7 @@ function Listingcomp({
   return (
     <div className={styles.compCtn}>
       <div className={styles.imgCtn}>
-        <Image className={styles.img} src={src} fill="true" objectFit="cover" />
+        <Image className={styles.img} src={src} layout="fill" fill="true" objectFit="cover" />
         {/* <div>Sale</div> */}
       </div>
       <p id={styles.address}>{address}</p>

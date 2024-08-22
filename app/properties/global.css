@@ -108,11 +108,37 @@ body{
     font-size: 16px;
     color: #262626;
 }
-.listingCtn{
+.listingCompCtn{
     width:100% ;
     display: flex;
     justify-content: space-between;
     
+}
+.listingCtn{
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
     /* border: 1px solid white; */
     /* padding: 0px 80px; */
+}
+.listingCtnNavSect{
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: fit-content;
+    display: flex;
+    gap: 20px;
+}
+.leftIcon,.rightIcon{
+    width: 40px;
+    height: 40px;   
+}
+.leftIcon:hover,.rightIcon:hover{
+    color: white;
+
+}
+a{
+    text-decoration: none;
 }

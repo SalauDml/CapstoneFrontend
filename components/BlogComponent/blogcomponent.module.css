@@ -1,0 +1,45 @@
+.imgCtn{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.compCtn{
+    box-sizing: border-box;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    background-color: #111111;
+}
+.compCtn h3{
+    font: bold;
+    color: white;
+    font-size: 10px
+    
+}
+.compCtn p:first-of-type{
+    line-height: 2;
+    background-color: #2f2f2f;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    padding-left: 0px;
+}
+.compCtn p:last-of-type{
+    background-color: #703BF7;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+.compCtn p:last-of-type:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
